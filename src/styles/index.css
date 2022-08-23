@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary-color: #1849C6;
+  --secondary-color: #FFBE0B;
+  --deep-orange: #FB5607;
+  --light-orange: #FF7B00;
+}
+
+@tailwind base {
+  html {
+    font-family: Poppins, 'Courier New', Courier, monospace
+  }
+};
+@tailwind components;
+@tailwind utilities;
