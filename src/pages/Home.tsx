@@ -1,8 +1,10 @@
-import { Input } from 'antd'
-import React from 'react'
+import { Input } from "antd";
+import React from "react";
 
 export default function Home() {
   return (
-    <h1><Input /></h1>
-  )
+    <h1>
+      <Input />
+    </h1>
+  );
 }
