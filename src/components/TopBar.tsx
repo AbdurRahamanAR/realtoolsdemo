@@ -50,13 +50,13 @@ export default function TopBar() {
             </li>
           ))}
           <li className="bg-secondary text-sapphire font-medium text-lg rounded-[10px] leading-5 py-2 px-[18px]">
-            Contact
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
 
         <Drawer onClose={() => toggle()} visible={showNavItems}>
           <List
-            dataSource={navItems}
+            dataSource={[...navItems, { label: "Contact", url: "/contact" }]}
             renderItem={(item) => (
               <List.Item className="p-0">
                 <NavLink

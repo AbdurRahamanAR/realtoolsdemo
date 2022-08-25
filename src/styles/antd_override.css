@@ -1,0 +1,4 @@
+.ant-input:focus,
+.ant-input-focused {
+  box-shadow: none;
+}
