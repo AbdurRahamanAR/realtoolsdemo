@@ -1,6 +1,6 @@
 import { Drawer, List } from "antd";
 import clsx from "clsx";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import useToggle from "../hooks/useToggle";
 import Icon from "./Icon";
 import Logo from "./Logo";
@@ -15,9 +15,11 @@ const navItems = [
 export default function TopBar() {
   const { open: showNavItems, toggle } = useToggle(false);
   return (
-    <div className="bg-primary flex justify-center">
+    <nav className="bg-primary flex justify-center">
       <div className="flex justify-between w-full max-w-screen-xl p-[30px]">
-        <Logo type="secondary" />
+        <Link to="/">
+          <Logo type="secondary" />
+        </Link>
 
         <button
           onClick={() => {
@@ -76,6 +78,6 @@ export default function TopBar() {
           />
         </Drawer>
       </div>
-    </div>
+    </nav>
   );
 }
