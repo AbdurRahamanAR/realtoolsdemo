@@ -32,7 +32,7 @@ export default function TopBar() {
         </button>
 
         {/* Desktop Nav */}
-        <ul className="hidden lg:flex gap-x-4 lg:gap-x-10 items-center">
+        <ul className="hidden ml-auto lg:flex gap-x-4 lg:gap-x-10 items-center">
           {navItems.map((navItem) => (
             <li key={navItem.label}>
               <NavLink

@@ -14,12 +14,16 @@ module.exports = {
       white: "#ffffff",
       sapphire: "#021850",
       alice_blue: "#F6F8FD",
+      charcoal: "#4A4A4A",
     },
     fontFamily: {
-      inter: "Inter",
+      inter: ["Inter", "sans-serif"],
+      poppins: ["Poppins", "sans-serif"],
+      roboto: ["Roboto", "sans-serif"],
     },
     screens: {
-      sm: "640px",
+      xs: "300px",
+      sm: "600px",
       md: "768px",
       lg: "1024px",
       xl: "1245px",
