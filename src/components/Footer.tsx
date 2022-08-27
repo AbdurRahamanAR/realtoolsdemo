@@ -1,4 +1,3 @@
-import { Button, Input, Select } from "antd";
 import { Link } from "react-router-dom";
 import Icon from "./Icon";
 import Logo from "./Logo";
@@ -55,8 +54,8 @@ export default function Footer() {
       <div>
         <h5>Newsleter</h5>
         <p>Get latest updates right in your inbox</p>
-        <Input />
-        <Button type="primary">Subscribe Now</Button>
+        <input />
+        <button type="button">Subscribe Now</button>
       </div>
       <div>
         <h5>Let’s get social</h5>
@@ -69,9 +68,9 @@ export default function Footer() {
             );
           })}
         </ul>
-        <Select>
-          <Select.Option value="en">English - En</Select.Option>
-        </Select>
+        <select>
+          <option value="en">English - En</option>
+        </select>
       </div>
     </footer>
   );

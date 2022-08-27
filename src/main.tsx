@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "antd/dist/antd.less";
 import "./styles/index.css";
-import "./styles/antd_override.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
