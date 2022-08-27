@@ -16,7 +16,7 @@ const IconText = ({ text, icon }: { text: string; icon: string }) => {
 
 export default function AdvertiseCard({ image }: AdvertiseCardProps) {
   return (
-    <div className="rounded bg-aliceBlue pt-[18.59px] pl-[22px] pr-[22.79px] pb-[24.71px]">
+    <div className="w-[399px] rounded bg-aliceBlue pt-[18.59px] pl-[22px] pr-[22.79px] pb-[24.71px]">
       <img
         className="w-full object-cover rounded max-h-[266.77px]"
         src={image}

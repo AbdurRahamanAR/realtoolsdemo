@@ -4,7 +4,7 @@ export default function HeroSection() {
   return (
     <div
       className="
-        h-[609px] pt-[174px] px-3 text-center w-full 
+        min-h-[609px] pt-[174px] px-3 text-center w-full 
         bg-cover bg-[url('../assets/hero_bg.jpg')]
       "
     >
@@ -15,9 +15,11 @@ export default function HeroSection() {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sagittis,
         aliquam non tortor blandit lobortis. blandit{" "}
       </p>
-      <div className="mt-[52px]">
-        <Button variant="secondary">Sell Your Self Storage</Button>
-        <Button variant="white" className="ml-2.5">
+      <div className="flex flex-wrap pb-5 gap-5 justify-center mt-[52px]">
+        <Button className="w-[251px]" variant="secondary">
+          Sell Your Self Storage
+        </Button>
+        <Button variant="white" className="w-[251px]">
           Active Self Storage Listings
         </Button>
       </div>
