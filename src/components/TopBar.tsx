@@ -5,6 +5,7 @@ import "react-modern-drawer/dist/index.css";
 import useToggle from "../hooks/useToggle";
 import Icon from "./Icon";
 import Logo from "./Logo";
+import { useEffect } from "react";
 
 const navItems = [
   { label: "Active Listings", url: "/listing" },
@@ -15,8 +16,34 @@ const navItems = [
 
 export default function TopBar() {
   const { open: showNavItems, toggle } = useToggle(false);
+
+  useEffect(() => {
+    const handler = () => {
+      const topBar = document.getElementById("topBar");
+      if (!topBar) return;
+      const scrollTop =
+        window.pageYOffset !== undefined
+          ? window.pageYOffset
+          : (
+              document.documentElement ||
+              document.body.parentNode ||
+              document.body
+            ).scrollTop;
+      if (scrollTop > 150) {
+        topBar.style.backgroundColor = "var(--primary-color)";
+        topBar.style.transition = "all 0.2s";
+      } else {
+        topBar.style.backgroundColor = "transparent";
+      }
+    };
+    window.addEventListener("scroll", handler);
+    return () => {
+      window.removeEventListener("scroll", handler);
+    };
+  }, []);
+
   return (
-    <nav className="bg-primary flex justify-center">
+    <nav id="topBar" className="fixed w-full flex justify-center">
       <div className="flex justify-between w-full max-w-screen-xl p-[30px]">
         <Link to="/">
           <Logo type="secondary" />

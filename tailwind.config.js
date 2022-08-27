@@ -8,13 +8,22 @@ module.exports = {
     colors: {
       primary: "var(--primary-color)",
       secondary: "var(--secondary-color)",
-      deep_orange: "var(--deep-orange)",
-      light_orange: "var(--light-orange)",
+      deepOrange: "var(--deep-orange)",
+      lightOrange: "var(--light-orange)",
       dark: "#000103",
       white: "#ffffff",
       sapphire: "#021850",
-      alice_blue: "#F6F8FD",
+      aliceBlue: "#F6F8FD",
       charcoal: "#4A4A4A",
+    },
+    fontSize: {
+      headerBig: [
+        "60px",
+        {
+          fontWeight: 800,
+          lineHeight: "75px",
+        },
+      ],
     },
     fontFamily: {
       inter: ["Inter", "sans-serif"],
