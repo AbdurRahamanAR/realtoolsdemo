@@ -1,6 +1,7 @@
-import { Drawer, List } from "antd";
 import clsx from "clsx";
+import Drawer from "react-modern-drawer";
 import { Link, NavLink } from "react-router-dom";
+import "react-modern-drawer/dist/index.css";
 import useToggle from "../hooks/useToggle";
 import Icon from "./Icon";
 import Logo from "./Logo";
@@ -25,7 +26,7 @@ export default function TopBar() {
           onClick={() => {
             toggle();
           }}
-          className="lg:hidden"
+          className="lg:hidden ml-auto"
         >
           <Icon icon="list" width={30} className="text-white" />
         </button>
@@ -54,28 +55,45 @@ export default function TopBar() {
           </li>
         </ul>
 
-        <Drawer onClose={() => toggle()} visible={showNavItems}>
-          <List
-            dataSource={[...navItems, { label: "Contact", url: "/contact" }]}
-            renderItem={(item) => (
-              <List.Item className="p-0">
-                <NavLink
-                  to={item.url}
-                  onClick={() => {
-                    toggle();
-                  }}
-                  className={({ isActive }) =>
-                    clsx([
-                      "py-4 pl-2 w-full h-full hover:bg-primary hover:text-white ",
-                      isActive ? "bg-primary text-white" : "bg-white text-dark",
-                    ])
-                  }
-                >
-                  {item.label}
-                </NavLink>
-              </List.Item>
-            )}
-          />
+        <Drawer direction="left" onClose={() => toggle()} open={showNavItems}>
+          <ul>
+            {navItems.map((item) => {
+              return (
+                <li key={item.url} className="h-14 w-full">
+                  <NavLink
+                    to={item.url}
+                    onClick={() => {
+                      toggle();
+                    }}
+                    className={({ isActive }) =>
+                      clsx([
+                        "py-4 pl-2 w-full block h-full hover:bg-primary hover:text-white ",
+                        isActive
+                          ? "bg-primary text-white"
+                          : "bg-white text-dark",
+                      ])
+                    }
+                  >
+                    {item.label}
+                  </NavLink>
+                </li>
+              );
+            })}
+            <NavLink
+              to="/contact"
+              onClick={() => {
+                toggle();
+              }}
+              className={({ isActive }) =>
+                clsx([
+                  "py-4 pl-2 w-full block h-full hover:bg-primary hover:text-white ",
+                  isActive ? "bg-primary text-white" : "bg-white text-dark",
+                ])
+              }
+            >
+              Contact
+            </NavLink>
+          </ul>
         </Drawer>
       </div>
     </nav>
