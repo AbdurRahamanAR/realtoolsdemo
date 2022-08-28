@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "./Button";
 import Icon from "./Icon";
 
@@ -6,6 +5,8 @@ type BlogCardProps = {
   image: string;
   time: string;
   tag: string;
+  writerName: string;
+  writerImg: string;
 };
 
 const BlogInfoText = ({
@@ -24,7 +25,13 @@ const BlogInfoText = ({
   );
 };
 
-export default function BlogCard({ image, time, tag }: BlogCardProps) {
+export default function BlogCard({
+  image,
+  writerName,
+  writerImg,
+  time,
+  tag,
+}: BlogCardProps) {
   return (
     <div className="rounded bg-white">
       <img
@@ -36,15 +43,16 @@ export default function BlogCard({ image, time, tag }: BlogCardProps) {
         <h2 className="text-[25px] font-semibold mt-[21px] text-xl text-sapphire">
           Heading of this Self Storage
         </h2>
-        <div className="mt-5 w-full flex justify-between gap-x-[15px]">
+        <div className="mt-5 w-full flex justify-between flex-wrap gap-[15px]">
           <BlogInfoText icon="clock" value={time} />
           <BlogInfoText icon="tag" value={tag} />
           <div className="flex text-sm leading-5">
             <img
               className="w-[20px] h-[20px] border border-dark rounded-full overflow-hidden mr-[5px]"
-              src=""
+              src={writerImg}
+              alt={writerName}
             />
-            <span className="opacity-70">Raza</span>
+            <span className="opacity-70">{writerName}</span>
           </div>
         </div>
         <div className="mt-5 flex justify-center">
