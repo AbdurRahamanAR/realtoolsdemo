@@ -12,7 +12,7 @@ export default function ActiveSelfStorage() {
         "
     >
       <div className="max-w-screen-xl mx-auto">
-        <div className="text-center pt-[89px]">
+        <div className="text-center px-5 pt-[89px]">
           <h2 className="text-heading text-white mb-5 font-bold">
             Active Listing Self Storages
           </h2>
