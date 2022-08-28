@@ -1,11 +1,10 @@
-import React from "react";
 import Button from "../../components/Button";
 
 export default function SellStorageCard() {
   return (
     <div
       className="
-        bg-glitter px-5 pt-10 pb-6
+        bg-glitter px-5 pt-10 pb-12
         bg-no-repeat bg-left-bottom
         bg-[url('../assets/sell_section_bg_shape.svg')]
         rounded-br-[100px]
@@ -29,7 +28,9 @@ export default function SellStorageCard() {
             sapien sagittis maecenas tincidunt. Quis pretium ornare id diam amet
             proin scelerisque nunc.
           </p>
-          <Button className="mt-10">Sell Your Self Storage</Button>
+          <Button className="mt-10 w-[253px]" size="xl">
+            Sell Your Self Storage
+          </Button>
         </div>
       </div>
     </div>
