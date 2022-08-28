@@ -18,3 +18,25 @@
 footer {
   background-position: left bottom, right 53px bottom;
 }
+
+.slider_dots {
+  display: flex !important;
+  justify-content: center;
+  column-gap: 14.03px;
+  margin-top: 55px;
+}
+
+.slider_dots li {
+  border: 1px solid #dbdee7;
+  border-radius: 50%;
+}
+
+.slider_dots li button {
+  width: 26.98px;
+  height: 26.03px;
+  color: transparent;
+}
+
+.slider_dots li.slick-active {
+  background-color: var(--primary-color);
+}

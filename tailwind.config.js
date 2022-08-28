@@ -17,6 +17,20 @@ module.exports = {
       charcoal: "#4A4A4A",
     },
     fontSize: {
+      heading: [
+        "35px",
+        {
+          fontWeight: 600,
+          lineHeight: "30px",
+        },
+      ],
+      body: [
+        "18px",
+        {
+          fontWeight: 400,
+          lineHeight: "30px",
+        },
+      ],
       headerBig: [
         "60px",
         {

@@ -43,7 +43,7 @@ export default function TopBar() {
   }, []);
 
   return (
-    <nav id="topBar" className="fixed w-full flex justify-center">
+    <nav id="topBar" className="z-10 fixed w-full flex justify-center">
       <div className="flex justify-between w-full max-w-screen-xl p-[30px]">
         <Link to="/">
           <Logo type="secondary" />
