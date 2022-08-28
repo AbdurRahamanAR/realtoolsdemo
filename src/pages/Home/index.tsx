@@ -3,6 +3,7 @@ import BlogSection from "./BlogSection";
 import BuyStorageCard from "./BuyStorageCard";
 import FeatureStorage from "./FeatureStorage";
 import HeroSection from "./HeroSection";
+import ReachOutSection from "./ReachOutSection";
 import SellStorageCard from "./SellStorageCard";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <SellStorageCard />
       <BuyStorageCard />
       <BlogSection />
+      <ReachOutSection />
     </div>
   );
 }
