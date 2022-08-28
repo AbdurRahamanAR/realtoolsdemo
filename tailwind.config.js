@@ -15,6 +15,7 @@ module.exports = {
       sapphire: "#021850",
       aliceBlue: "#F6F8FD",
       charcoal: "#4A4A4A",
+      glitter: "#E8EFFF",
     },
     fontSize: {
       heading: [
@@ -51,6 +52,11 @@ module.exports = {
       lg: "1024px",
       xl: "1245px",
       "2xl": "1536px",
+    },
+    extend: {
+      textColor: {
+        DEFAULT: "#000103",
+      },
     },
   },
   plugins: [],

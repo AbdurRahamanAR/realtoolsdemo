@@ -16,10 +16,10 @@ export default function HeroSection() {
         aliquam non tortor blandit lobortis. blandit{" "}
       </p>
       <div className="flex flex-wrap pb-5 gap-5 justify-center mt-[52px]">
-        <Button className="w-[251px]" variant="secondary">
+        <Button className="w-[251px]" size="xl" variant="secondary">
           Sell Your Self Storage
         </Button>
-        <Button variant="white" className="w-[251px]">
+        <Button variant="white" size="xl" className="w-[251px]">
           Active Self Storage Listings
         </Button>
       </div>

@@ -6,6 +6,7 @@ import Button from "../../components/Button";
 import ActiveSelfStorage from "./ActiveSelfStorage";
 import FeatureStorage from "./FeatureStorage";
 import HeroSection from "./HeroSection";
+import SellStorageCard from "./SellStorageCard";
 
 export default function Home() {
   return (
@@ -13,18 +14,7 @@ export default function Home() {
       <HeroSection />
       <FeatureStorage />
       <ActiveSelfStorage />
-
-      <div>
-        <div>
-          <h3>Do you have a Self Storage for Sale?</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor
-            sapien sagittis maecenas tincidunt. Quis pretium ornare id diam amet
-            proin scelerisque nunc.
-          </p>
-          <Button>Sell Your Self Storage</Button>
-        </div>
-      </div>
+      <SellStorageCard />
     </div>
   );
 }

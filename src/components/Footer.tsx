@@ -77,7 +77,7 @@ export default function Footer() {
             placeholder="Enter Your Email"
             className="mt-2 rounded px-[21px] pt-[17px] pb-[15px] max-w-[250px] h-[50px] border border-[#E8EFFF] focus:border-primary focus-visible:outline-none focus-visible:border-primary"
           />
-          <Button className="mt-2.5">Subscribe Now</Button>
+          <Button className="mt-2.5 w-[165px]">Subscribe Now</Button>
         </div>
         <div className="w-full max-w-[211px]">
           <h5 className="font-bold text-lg leading-[21px] mb-6">

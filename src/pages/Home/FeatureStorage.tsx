@@ -32,7 +32,7 @@ export default function FeatureStorage() {
   return (
     <div className="max-w-screen-xl mx-auto px-5 mb-[98.97px]">
       <div className="text-center pt-[100px]">
-        <h2 className="text-heading text-sapphire mb-5">
+        <h2 className="text-heading text-sapphire mb-5 ">
           Featured Self Storages
         </h2>
         <p className="max-w-[769px] text-body mx-auto">

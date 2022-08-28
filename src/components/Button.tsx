@@ -3,6 +3,7 @@ import { ButtonHTMLAttributes } from "react";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary" | "white";
+  size?: "md" | "xl" | "2xl";
 }
 
 const getVariantClasses = (variant: ButtonProps["variant"]) => {
@@ -16,8 +17,20 @@ const getVariantClasses = (variant: ButtonProps["variant"]) => {
   }
 };
 
+const getSizeClasses = (variant: ButtonProps["size"]) => {
+  switch (variant) {
+    case "2xl":
+      return "h-[80px]";
+    case "xl":
+      return "h-[60px]";
+    default:
+      return "h-[50px]";
+  }
+};
+
 export default function Button({
   type,
+  size = "md",
   variant = "primary",
   className = "",
   ...props
@@ -26,8 +39,9 @@ export default function Button({
     <button
       className={clsx([
         getVariantClasses(variant),
+        getSizeClasses(size),
         "rounded font-semibold leading-5",
-        "h-[50px]  py-[15px] px-5 w-max",
+        "py-[15px] px-5",
         className,
       ])}
       type={type}
