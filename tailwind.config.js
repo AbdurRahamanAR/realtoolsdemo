@@ -2,9 +2,6 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    borderRadius: {
-      DEFAULT: "10px",
-    },
     colors: {
       primary: "var(--primary-color)",
       secondary: "var(--secondary-color)",
@@ -31,12 +28,15 @@ module.exports = {
       "2xl": "1536px",
     },
     extend: {
+      borderRadius: {
+        DEFAULT: "10px",
+      },
       fontSize: {
         heading: [
           "35px",
           {
             fontWeight: 600,
-            lineHeight: "30px",
+            lineHeight: "50px",
           },
         ],
         body: [

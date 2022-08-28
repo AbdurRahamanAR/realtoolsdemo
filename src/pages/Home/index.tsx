@@ -1,4 +1,5 @@
 import ActiveSelfStorage from "./ActiveSelfStorage";
+import BlogSection from "./BlogSection";
 import BuyStorageCard from "./BuyStorageCard";
 import FeatureStorage from "./FeatureStorage";
 import HeroSection from "./HeroSection";
@@ -12,6 +13,7 @@ export default function Home() {
       <ActiveSelfStorage />
       <SellStorageCard />
       <BuyStorageCard />
+      <BlogSection />
     </div>
   );
 }
