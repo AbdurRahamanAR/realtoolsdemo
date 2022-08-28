@@ -1,9 +1,5 @@
-import React from "react";
-import "slick-carousel/slick/slick.css";
-
-import AdvertiseCard from "../../components/AdvertiseCard";
-import Button from "../../components/Button";
 import ActiveSelfStorage from "./ActiveSelfStorage";
+import BuyStorageCard from "./BuyStorageCard";
 import FeatureStorage from "./FeatureStorage";
 import HeroSection from "./HeroSection";
 import SellStorageCard from "./SellStorageCard";
@@ -15,6 +11,7 @@ export default function Home() {
       <FeatureStorage />
       <ActiveSelfStorage />
       <SellStorageCard />
+      <BuyStorageCard />
     </div>
   );
 }
