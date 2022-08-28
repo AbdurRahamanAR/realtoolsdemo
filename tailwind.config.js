@@ -17,29 +17,6 @@ module.exports = {
       charcoal: "#4A4A4A",
       glitter: "#E8EFFF",
     },
-    fontSize: {
-      heading: [
-        "35px",
-        {
-          fontWeight: 600,
-          lineHeight: "30px",
-        },
-      ],
-      body: [
-        "18px",
-        {
-          fontWeight: 400,
-          lineHeight: "30px",
-        },
-      ],
-      headerBig: [
-        "60px",
-        {
-          fontWeight: 800,
-          lineHeight: "75px",
-        },
-      ],
-    },
     fontFamily: {
       inter: ["Inter", "sans-serif"],
       poppins: ["Poppins", "sans-serif"],
@@ -54,6 +31,29 @@ module.exports = {
       "2xl": "1536px",
     },
     extend: {
+      fontSize: {
+        heading: [
+          "35px",
+          {
+            fontWeight: 600,
+            lineHeight: "30px",
+          },
+        ],
+        body: [
+          "18px",
+          {
+            fontWeight: 400,
+            lineHeight: "30px",
+          },
+        ],
+        headerBig: [
+          "60px",
+          {
+            fontWeight: 800,
+            lineHeight: "75px",
+          },
+        ],
+      },
       textColor: {
         DEFAULT: "#000103",
       },

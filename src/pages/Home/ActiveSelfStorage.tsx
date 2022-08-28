@@ -36,7 +36,11 @@ export default function ActiveSelfStorage() {
             );
           })}
         </div>
-        <Button className="mt-[80px] mx-auto block" variant="secondary">
+        <Button
+          size="2xl"
+          className="w-[364px] text-xl mt-[80px] mx-auto block"
+          variant="secondary"
+        >
           View More Listings
         </Button>
       </div>
