@@ -4,6 +4,7 @@ export default function HeroSection() {
   return (
     <div
       className="
+        pb-[50px]
         min-h-[609px] pt-[174px] px-3 text-center w-full 
         bg-cover bg-[url('../assets/hero_bg.jpg')]
       "

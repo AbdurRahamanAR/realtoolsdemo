@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import Drawer from "react-modern-drawer";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useMatch } from "react-router-dom";
 import "react-modern-drawer/dist/index.css";
 import useToggle from "../hooks/useToggle";
 import Icon from "./Icon";
@@ -15,6 +15,10 @@ const navItems = [
 ];
 
 export default function TopBar() {
+  const isOnHomePage = !!useMatch({
+    path: "/",
+  });
+  console.log(isOnHomePage);
   const { open: showNavItems, toggle } = useToggle(false);
 
   useEffect(() => {
@@ -36,14 +40,22 @@ export default function TopBar() {
         topBar.style.backgroundColor = "transparent";
       }
     };
-    window.addEventListener("scroll", handler);
-    return () => {
-      window.removeEventListener("scroll", handler);
-    };
-  }, []);
+    if (isOnHomePage) {
+      window.addEventListener("scroll", handler);
+      return () => {
+        window.removeEventListener("scroll", handler);
+      };
+    }
+  }, [isOnHomePage]);
 
   return (
-    <nav id="topBar" className="z-10 fixed w-full flex justify-center">
+    <nav
+      id="topBar"
+      className={clsx([
+        !isOnHomePage && "bg-primary",
+        "z-10 fixed w-full flex justify-center",
+      ])}
+    >
       <div className="flex justify-between w-full max-w-screen-xl p-[30px]">
         <Link to="/">
           <Logo type="secondary" />
