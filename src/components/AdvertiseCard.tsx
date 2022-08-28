@@ -20,9 +20,9 @@ const PropertyInfoText = ({
   icon: string;
 }) => {
   return (
-    <div className="w-6/12 leading-5">
+    <div className="min-w-6/12 flex leading-5">
       <Icon width={16} height={20.36} className="mr-2.5" icon={icon} />{" "}
-      <span className="font-medium">{title} </span>
+      <span className="font-medium">{title}&nbsp;</span>
       <span>{value}</span>
     </div>
   );
@@ -42,10 +42,10 @@ export default function AdvertiseCard({
         src={image}
         alt=""
       />
-      <h2 className="text-[25px] font-semibold leading-5 mt-[30px]">
+      <h2 className="text-[25px] font-semibold mt-[30px]">
         Heading of this Self Storage
       </h2>
-      <div className="mt-[30px] w-full flex flex-wrap gap-y-5">
+      <div className="mt-[30px] w-full flex flex-wrap justify-between gap-y-5">
         <PropertyInfoText icon="location" value={location} />
         <PropertyInfoText
           icon="property"

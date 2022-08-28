@@ -45,7 +45,7 @@ export default function FeatureStorage() {
           {[1, 2, 3, 4, 5, 6].map((adv) => {
             return (
               <div key={adv}>
-                <div className="pr-5">
+                <div className="px-2.5">
                   <AdvertiseCard
                     location="Jersy City, NJ"
                     occupancy={50}

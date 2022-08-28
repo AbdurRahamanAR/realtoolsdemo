@@ -38,7 +38,7 @@ export default function ActiveSelfStorage() {
         </div>
         <Button
           size="2xl"
-          className="w-[364px] text-xl mt-[80px] mx-auto block"
+          className="w-[calc(100%_-_40px)] text-xl mt-5  mx-auto block sm:mt-[80px] sm:w-[364px]"
           variant="secondary"
         >
           View More Listings
